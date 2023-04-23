@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SudutjarakDialogBase</class>
+ <widget class="QDialog" name="SudutjarakDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sudut dan jarak</string>
+  </property>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>311</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Sans Serif</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Sistem Proyeksi</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>426</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Sans Serif</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Koordinat Awal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Sans Serif</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Azimuth dan Jarak</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>231</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Garis Otomatis</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_ok_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>390</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>111</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>111</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Bright</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>PLOT!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>291</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Copyright Kelompok 5_B (Abel, Anqori, Affan, Bram)</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <widget class="QLabel" name="label_15">
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_x_2"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>150</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <widget class="QLabel" name="label_16">
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_y_2"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>421</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>251</width>
+     <height>0</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 46N (EPSG:32646)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 46S (EPSG:32746)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 47N (EPSG:32647)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 47S (EPSG:32747)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 48N (EPSG:32648)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 48S (EPSG:32748)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 49N (EPSG:32649)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 49S (EPSG:32749)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 50N (EPSG:32650)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 50S (EPSG:32750)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 51N (EPSG:32651)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 51S (EPSG:32751)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 52N (EPSG:32652)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 52S (EPSG:32752)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 53N (EPSG:32653)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 53S (EPSG:32753)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 54N (EPSG:32654)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WGS'84/UTM Zone 54S (EPSG:32754)</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_18">
+      <property name="text">
+       <string>Azimuth (derajat)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_az_2"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>240</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>Jarak (meter)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_jarak_2"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>422</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QLabel" name="label_20">
+      <property name="text">
+       <string>Banyaknya Titik Pengulangan Otomatis Berturut-turut</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinBox_2">
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="atur_ulang_ok">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>390</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>111</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>111</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Atur Ulang</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
